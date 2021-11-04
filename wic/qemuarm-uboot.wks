@@ -1,0 +1,4 @@
+part /boot --source bootimg-partition --ondisk mmcblk0 --fstype=ext4 --label boot --align 1024 --use-uuid --extra-space 50 --mkfs-extraopts="-O ^metadata_csum"
+part / --source rootfs --fstype=ext4 --ondisk mmcblk0 --use-uuid --label platform --align 1024 --extra-space 300
+part /sdi --ondisk sda --fstype=ext4 --label  workspace --align 1024 --use-uuid --size 200
+
