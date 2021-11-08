@@ -16,6 +16,8 @@ BBLAYERS = " \
   ${BSPDIR}/yocto/meta-openembedded/meta-python \
   ${BSPDIR}/yocto/meta-openembedded/meta-networking \
   \
+  ${BSPDIR}/yocto/meta-rauc \
+  \
   ${BSPDIR}/yocto/meta-distro-coffee \
   ${BSPDIR}/yocto/meta-yocto-coffee-qemuarm \
 "

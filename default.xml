@@ -20,6 +20,10 @@
            path="yocto/meta-openembedded"/>
 
   <project remote="github"
+           name="rauc/meta-rauc.git"
+           path="yocto/meta-rauc"/>
+
+  <project remote="github"
            name="matthiasklein/meta-distro-coffee.git"
            path="yocto/meta-distro-coffee"/>
 
