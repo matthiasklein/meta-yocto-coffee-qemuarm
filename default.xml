@@ -24,6 +24,10 @@
            path="yocto/meta-rauc"/>
 
   <project remote="github"
+           name="meta-qt5/meta-qt5.git"
+           path="yocto/meta-qt5"/>
+
+  <project remote="github"
            name="matthiasklein/meta-distro-coffee.git"
            path="yocto/meta-distro-coffee"/>
 
