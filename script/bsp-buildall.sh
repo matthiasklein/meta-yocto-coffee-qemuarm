@@ -9,3 +9,5 @@ cd ${PATH_YOCTO_BASE}
 source setup-environment
 
 bitbake qemu-image-base
+bitbake qemu-image-base -c populate_sdk
+
