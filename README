@@ -36,7 +36,7 @@ A regular Yocto build is started like this:
 
 ```
 source setup-environment
-bitbake qemu-image-base
+bitbake coffee-image
 ```
 
 
@@ -49,7 +49,7 @@ cd yocto-qemu
 Run the image inside QEMU
 -------------------------
 ```
-runqemu qemuarm qemu-image-base wic nographic
+runqemu qemuarm coffee-image wic nographic
 ```
 => exit with "Ctrl-A X"
 

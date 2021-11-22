@@ -8,6 +8,7 @@ PATH_YOCTO_BASE="$( dirname "$( dirname "$( readlink -f ${PATH_REPO_YOCTO_LAYER}
 cd ${PATH_YOCTO_BASE}
 source setup-environment
 
-bitbake qemu-image-base
-bitbake qemu-image-base -c populate_sdk
+bitbake coffee-image
+#bitbake coffee-image-bundle
+bitbake coffee-image -c populate_sdk
 

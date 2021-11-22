@@ -3,6 +3,13 @@ MACHINE ??= "qemuarm"
 # changes from meta-qemuarm-virt layer
 include conf/machine/${MACHINE}-extra.conf
 
+DISTRO_FEATURES:append = " rauc"
+IMAGE_INSTALL:append = " u-boot-selection"
+IMAGE_BOOT_FILES:append = " u-boot-selection.img"
+RAUC_KEYRING_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/ca.cert.pem"
+RAUC_KEY_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/private/development-1.key.pem"
+RAUC_CERT_FILE="${THISDIR}/../../../meta-distro-coffee/openssl-ca/dev/development-1.cert.pem"
+
 DL_DIR ?= "${BSPDIR}/downloads"
 SSTATE_DIR ?= "${BSPDIR}/sstate-cache"
 INHERIT += "rm_work"
