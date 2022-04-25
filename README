@@ -26,7 +26,7 @@ Checkout the source code
 ------------------------
 Initialise your project like this:
 ```
-cd ~ && rm -fR yocto-coffee-qemuarm && mkdir yocto-coffee-qemuarm && cd yocto-coffee-qemuarm && repo init -u git@github.com:matthiasklein/meta-yocto-coffee-qemuarm.git -b master && repo sync
+cd ~ && rm -fR yocto-coffee-qemuarm && mkdir yocto-coffee-qemuarm && cd yocto-coffee-qemuarm && repo init -u git@github.com:matthiasklein/meta-yocto-coffee-qemuarm.git -b kirkstone && repo sync
 ```
 
 Build
